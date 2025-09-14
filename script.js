@@ -1,7 +1,9 @@
 const DEFAULT_GRID_DIMENSIONS = 16;
+const MAX_GRID_DIMENSIONS = 100;
 const etchASketch = document.querySelector("#etch-a-sketch");
 
 function createEmptyGrid(dimensions) {
+    console.log("creating grid...");
     for (let i = 0; i < dimensions; i++) {
         const row = document.createElement("div");
         row.classList.add("row");
@@ -12,7 +14,6 @@ function createEmptyGrid(dimensions) {
             cell.classList.add("cell");
             cell.addEventListener("mouseenter", () => {
                 cell.style.backgroundColor = "black";
-                console.log("touched a div");
             });
             row.appendChild(cell);
         }
@@ -20,3 +21,21 @@ function createEmptyGrid(dimensions) {
 }
 
 createEmptyGrid(DEFAULT_GRID_DIMENSIONS);
+
+const resetButton = document.querySelector("#reset");
+resetButton.addEventListener("click", () => {
+    while(true) {
+        const newDimensions = prompt("How large do you want the grid?");
+        if (!Number.isInteger(Number(newDimensions))) {
+            alert("Please enter a whole number");
+            continue;
+        }
+        if (newDimensions > MAX_GRID_DIMENSIONS) {
+            alert("Please enter a number smaller than 100");
+            continue;
+        }
+        etchASketch.innerHTML = "";
+        createEmptyGrid(newDimensions);
+        break;
+    }
+});
