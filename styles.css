@@ -14,11 +14,22 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+header {
+  height: 5vh; 
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   color: red;
   text-align: center;
+}
+
+footer {
+  height: 5vh; 
 }
 
 .row {
@@ -36,23 +47,17 @@ h1 {
 #etch-a-sketch {
   display: flex;
   flex-direction: column;
-  margin: auto;
   height: 960px;
   width: 960px;
   border: 1px solid black;
   flex: 1;
 }
 
-#reset-container {
-  display: flex;
-  justify-content: center;
-}
-
 #reset {
   background-color: lightcoral;
   color: white;
   margin: 10px;
-  padding: 6px 16px;
+  padding: 4px 8;
   border: none;
 }
 
