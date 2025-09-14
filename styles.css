@@ -12,25 +12,34 @@ html, body {
 }
 
 body {
+  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 header {
-  height: 5vh; 
+  height: 8vh; 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 h1 {
-  color: red;
+  font-family: "Arizonia", cursive;
+  font-size: 60px;
+  color: #ffd900d5;
+  text-shadow: 1px 1px 0 rgb(134, 126, 35);
+  margin: 16px;
   text-align: center;
 }
 
 footer {
-  height: 5vh; 
+  display: flex;
+  justify-content: space-between;
+  height: 8vh; 
+  width: 100%;
+  padding: 4px;
 }
 
 .row {
@@ -46,17 +55,18 @@ footer {
 }
 
 #etch-a-sketch {
+  background-color: white;
   display: flex;
   flex-direction: column;
   height: 960px;
   width: 960px;
-  border: 1px solid black;
+  border: 2px solid black;
   flex: 1;
 }
 
 #reset {
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: black;
   margin: 10px;
   padding: 4px 8px;
   border: none;
@@ -64,5 +74,5 @@ footer {
 }
 
 #reset:hover {
-  background-color: lightcoral;
+  background-color: whitesmoke;
 }

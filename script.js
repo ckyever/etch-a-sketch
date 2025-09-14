@@ -6,7 +6,6 @@ const OPACITY_INCREMENT = 0.1;
 const etchASketch = document.querySelector("#etch-a-sketch");
 
 function createEmptyGrid(dimensions) {
-    console.log("creating grid...");
     for (let i = 0; i < dimensions; i++) {
         const row = document.createElement("div");
         row.classList.add("row");
