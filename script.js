@@ -25,7 +25,7 @@ createEmptyGrid(DEFAULT_GRID_DIMENSIONS);
 const resetButton = document.querySelector("#reset");
 resetButton.addEventListener("click", () => {
     while(true) {
-        const newDimensions = prompt("How large do you want the grid?");
+        const newDimensions = prompt("How many squares per side?");
         if (!Number.isInteger(Number(newDimensions))) {
             alert("Please enter a whole number");
             continue;
