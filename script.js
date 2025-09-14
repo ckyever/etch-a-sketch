@@ -1,4 +1,4 @@
-const GRID_DIMENSIONS = 4;
+const GRID_DIMENSIONS = 16;
 const etchASketch = document.querySelector("#etch-a-sketch");
 
 for (let i = 0; i < GRID_DIMENSIONS; i++) {

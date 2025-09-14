@@ -17,6 +17,11 @@ h1 {
 }
 
 .cell {
-  height: 200px;
-  width: 200px;
+  background-color: rgb(231, 231, 231);
+  height: 50px;
+  width: 50px;
+}
+
+.cell:hover {
+  background-color: black;  
 }
