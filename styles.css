@@ -21,7 +21,3 @@ h1 {
   height: 50px;
   width: 50px;
 }
-
-.cell:hover {
-  background-color: black;  
-}
