@@ -6,6 +6,16 @@ html {
   box-sizing: inherit;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   color: red;
   text-align: center;
@@ -30,6 +40,7 @@ h1 {
   height: 960px;
   width: 960px;
   border: 1px solid black;
+  flex: 1;
 }
 
 #reset-container {
